@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <!-- Bagian atas: Gambar anak di ranjang -->
+    <ImageView
+        android:id="@+id/imageViewTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.55" />
+
+    <!-- Bagian bawah: Background hijau bergelombang -->
+
+    <!-- Judul "Ayo Mulai !" -->
+    <ImageView
+        android:id="@+id/imageViewBottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="1.55"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewTop"
+        app:layout_constraintVertical_bias="0.499"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="1.13"
+        app:srcCompat="@drawable/icoo" />
+
+    <TextView
+        android:id="@+id/Ayo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="SATAC"
+        android:textColor="@android:color/white"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewTop"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Deskripsi -->
+    <TextView
+        android:id="@+id/deskripsi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Stimulus Auditory Therapy for"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@id/imageViewBottom"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/imageViewBottom"
+        app:layout_constraintTop_toBottomOf="@id/Ayo"
+        tools:fontFamily="@font/poppins_semibold" />
+
+    <TextView
+        android:id="@+id/deskripsi1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Anxiety Children"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@id/imageViewBottom"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/imageViewBottom"
+        app:layout_constraintTop_toBottomOf="@id/Ayo"
+        tools:fontFamily="@font/poppins_semibold" />
+    <!-- Tombol Mulai -->
+    <Button
+        android:id="@+id/btnMulai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_mulai"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Mulai"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewBottom"
+        app:layout_constraintEnd_toEndOf="@id/imageViewBottom"
+        app:layout_constraintStart_toStartOf="@id/imageViewBottom"
+        app:layout_constraintTop_toBottomOf="@id/deskripsi1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/btnMulai"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvNotifikasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mohon tunggu sebentar..."
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

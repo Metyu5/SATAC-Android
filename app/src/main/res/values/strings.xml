@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SATAC</string>
+    <string name="m">Mulai</string>
+    <string name="btn_next_desc"> Next</string>
+    <string name="btn_play_pause_desc">Play</string>
+    <string name="btn_previous_desc">previos</string>
+</resources>
