@@ -1,6 +1,6 @@
 # SATAC Android App
 
-**SATAC** is a simple Android application designed to provide users with an easy and efficient experience. This app is developed using **Android Studio** with **Java/Kotlin** and offers a user-friendly interface to facilitate interactions with Android devices.
+**SATAC** is a simple Android application designed to provide users with an easy and efficient experience. This app is developed using **Android Studio** with **Java** and offers a user-friendly interface to facilitate interactions with Android devices.
 
 ## 🎶 About This App
 
@@ -11,7 +11,7 @@ Although this is not a medical app, we aim to integrate the power of music to cr
 ## 🛠️ Technologies Used
 
 - Android Studio
-- Java / Kotlin (choose the one you use)
+- Java 
 - XML Layout
 
 ## #EnhancingKnowledge
